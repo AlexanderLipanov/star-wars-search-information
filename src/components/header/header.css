@@ -1,0 +1,108 @@
+.header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px;
+  padding: 0 20px;
+  background-color: rgba(36, 35, 35, 0.87);
+  height: 40px;
+  border-radius: 8px;
+}
+
+.logo-container {
+  padding: 3px 5px;
+  border-radius: 8px;
+  border: 1px solid #fffb29;
+}
+
+.logo {
+  font-size: 34px;
+  line-height: 100%;
+  color: #fffb29;
+}
+
+.menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+}
+
+.button-menu {
+  font-size: 30px;
+  line-height: 94%;
+  color: #fffb29;
+  background: none;
+  padding: 3px 5px;
+  border-radius: 8px;
+  border: 1px solid #fffb29;
+}
+
+.button-menu:hover,
+.button-menu-list:hover {
+  color: #0f0f0f;
+  background: #fff;
+  border: 1px solid white;
+}
+
+.button-menu:active,
+.button-menu-list:active {
+  background: #fffb29;
+}
+
+.button-menu-open {
+  background: #fffb29;
+  font-size: 30px;
+  line-height: 94%;
+  color: #0f0f0f;
+  padding: 3px 5px;
+  border-radius: 8px;
+  border: 1px solid rgba(61, 35, 35, 0.767);
+}
+
+.menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+  overflow: hidden;
+  -webkit-transition: all 0.25s ease 0s;
+  transition: all 0.25s ease 0s;
+}
+
+.button-menu-list {
+  font-size: 30px;
+  line-height: 94%;
+  color: #fffb29;
+  background: none;
+  padding: 3px 5px;
+  border-radius: 8px;
+  border: 1px solid #fffb29;
+}
+
+Link .button-menu-list {
+  color: rgba(41, 187, 255, 0.911);
+  border: 1px solid rgba(41, 187, 255, 0.911);
+}
+/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,28 @@
+
+.films-card {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    padding: 10px 0 10px 10px;
+    border-radius: 8px;
+    border: 1px solid rgb(71, 71, 71);
+}
+
+.films-title {
+    font-size: 21px;
+    line-height: 100%;
+    font-weight: bold;
+}
+
+.films-release-date {
+    font-size: 18px;
+    line-height: 100%;
+    font-weight: medium;
+}
+
+.director {
+    font-size: 18px;
+    line-height: 100%;
+    font-weight: medium;
+}

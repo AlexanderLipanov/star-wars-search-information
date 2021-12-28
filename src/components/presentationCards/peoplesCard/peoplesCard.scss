@@ -1,0 +1,41 @@
+
+.peoples-card {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    padding: 10px 0 10px 10px;
+    border-radius: 8px;
+    border: 1px solid rgb(71, 71, 71);
+}
+
+.name {
+    font-size: 21px;
+    line-height: 100%;
+}
+
+.characteristics {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    overflow: hidden;
+}
+
+.characterisc-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.characteristic-name {
+    font-size: 18px;
+    line-height: 100%;
+    font-weight: bold;
+}
+
+.characteristic-value {
+    font-size: 18px;
+    line-height: 100%;
+    font-weight: medium;
+}

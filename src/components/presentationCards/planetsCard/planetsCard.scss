@@ -1,0 +1,19 @@
+
+.planets {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    padding: 10px 0 10px 10px;
+    border-radius: 8px;
+    border: 1px solid rgb(71, 71, 71);
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.planets-characteristic {
+    font-size: 20px;
+    line-height: 100%;
+    font-weight: medium;
+}

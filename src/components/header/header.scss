@@ -1,0 +1,88 @@
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 0 20px;
+    background-color: rgba(36, 35, 35, 0.87);
+    height: 40px;
+    border-radius: 8px;
+}
+
+.logo-container {
+    padding: 3px 5px;
+    border-radius: 8px;
+    border: 1px solid rgb(255, 251, 41);
+}
+
+.logo {
+    font-size: 34px;
+    line-height: 100%;
+    color: rgb(255, 251, 41);
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+}
+
+.button-menu {
+    font-size: 30px;
+    line-height: 94%;
+    color: rgb(255, 251, 41);
+    background: none;
+    padding: 3px 5px;
+    border-radius: 8px;
+    border: 1px solid rgb(255, 251, 41);
+}
+
+.button-menu:hover,
+.button-menu-list:hover {
+    color: rgb(15, 15, 15);
+    background: #fff;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.button-menu:active,
+.button-menu-list:active {
+    background: rgb(255, 251, 41);
+}
+
+.button-menu-open {
+    background: rgb(255, 251, 41);
+    font-size: 30px;
+    line-height: 94%;
+    color: rgb(15, 15, 15);
+    padding: 3px 5px;
+    border-radius: 8px;
+    border: 1px solid rgba(61, 35, 35, 0.767);
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 15px;
+    overflow: hidden;
+    transition: all 0.25s ease 0s;
+}
+
+.button-menu-list {
+    font-size: 30px;
+    line-height: 94%;
+    color: rgb(255, 251, 41);
+    background: none;
+    padding: 3px 5px;
+    border-radius: 8px;
+    border: 1px solid rgb(255, 251, 41);
+}
+
+Link {
+
+    .button-menu-list {
+        color: rgba(41, 187, 255, 0.911);
+        border: 1px solid rgba(41, 187, 255, 0.911);
+    }
+}

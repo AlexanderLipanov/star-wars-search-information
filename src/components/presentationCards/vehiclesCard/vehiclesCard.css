@@ -1,0 +1,61 @@
+.vehicles {
+  width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 12px;
+  padding: 10px 0 10px 10px;
+  border-radius: 8px;
+  border: 1px solid #474747;
+}
+
+.vehicles-name-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 10px;
+}
+
+.vehicles-name-container-text {
+  font-size: 21px;
+  line-height: 100%;
+  font-weight: bold;
+}
+
+.vehicles-general {
+  font-size: 21px;
+  line-height: 100%;
+  font-weight: medium;
+}
+
+.vehicles-characteristics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 15px;
+}
+
+.vehicles-characteristics-title {
+  font-size: 22px;
+  line-height: 100%;
+  font-weight: bold;
+}
+
+.vehicles-characteristic {
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: medium;
+}
+/*# sourceMappingURL=vehicles.css.map */
