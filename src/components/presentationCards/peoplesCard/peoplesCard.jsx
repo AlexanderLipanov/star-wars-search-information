@@ -3,8 +3,6 @@ import './peoplesCard.css';
 
 const PeoplesCard = (props) => {
 
-    console.log(props, 'People Props');
-
     return (
         <div className="peoples-card">
             <p className="name"> {props.item.name} </p>

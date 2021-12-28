@@ -15,15 +15,6 @@ export default function Header() {
         openMenuClass = '-open';
     }
 
-    let openParams = {
-        peoples: searchReducer.peoples,
-        films: searchReducer.films,
-        starships: searchReducer.starships,
-        vehicles: searchReducer.vehicles,
-        species: searchReducer.species,
-        planets: searchReducer.planets
-    }
-
     const openMenu = () => {
         dispatch({type: 'MENU_OPEN'});
     }

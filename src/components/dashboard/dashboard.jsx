@@ -9,6 +9,7 @@ import SpeciesCard from "../presentationCards/speciesCard/speciesCard";
 import PlanetsCard from "../presentationCards/planetsCard/planetsCard";
 import DeleteIcon from '../../icons/icons8-delete.svg';
 import { useDispatch } from "react-redux";
+import Preloader from "../preloader/preloader";
 
 export default function Dashboard() {
 
@@ -16,17 +17,21 @@ export default function Dashboard() {
     const {searchReducer} = useSelector(state => state);
     console.log(searchReducer);
 
-    let peoplesCards = searchReducer.peoples.map( (item) => <PeoplesCard key={item.name} item={item} /> );
-    let filmsCards = searchReducer.films.map ( (item) => <FilmsCard key={item.episode_id} item={item} /> );
-    let starshipsCards = searchReducer.starships.map ( (item) => <StarshipsCard key={item.model} item={item} /> );
-    let vehiclesCards = searchReducer.vehicles.map( (item) => <VehiclesCard key={item.model} item={item} /> );
-    let speciesCards = searchReducer.species.map( (item) => <SpeciesCard key={item.name} item={item} /> );
-    let planetsCards = searchReducer.planets.map( (item) => <PlanetsCard key={item.name} item={item} /> );
+    let peoplesCards = searchReducer.peoples.map( (item, index) => <PeoplesCard key={index} item={item} /> );
+    let filmsCards = searchReducer.films.map ( (item, index) => <FilmsCard key={index} item={item} /> );
+    let starshipsCards = searchReducer.starships.map ( (item, index) => <StarshipsCard key={index} item={item} /> );
+    let vehiclesCards = searchReducer.vehicles.map( (item, index) => <VehiclesCard key={index} item={item} /> );
+    let speciesCards = searchReducer.species.map( (item, index) => <SpeciesCard key={index} item={item} /> );
+    let planetsCards = searchReducer.planets.map( (item, index) => <PlanetsCard key={index} item={item} /> );
 
     console.log(searchReducer.peoples);
 
     return (
         <div className="dashboard">
+            { searchReducer.isLoading === false
+            ? null
+            : <Preloader />
+            }
             { searchReducer.peoples.length !== 0
             ? <div className="dashboard-section">
                 <p className="section-name">peoples <button onClick={() => dispatch({type: 'CLOSE_PEOPLES'})} className="close-section"><img src={DeleteIcon} alt="" className="delete-icon" /></button></p>

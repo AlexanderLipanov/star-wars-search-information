@@ -19,6 +19,7 @@ let initialState = {
     vehicles: [],
     species: [],
     planets: [],
+    isLoading: false,
 }
 
 const searchReducer = (state = initialState, {type, peopleData, filmsData, 
@@ -30,38 +31,80 @@ const searchReducer = (state = initialState, {type, peopleData, filmsData,
         case SET_PEOPLES:
         return {
             ...state,
-            peoples: [...peopleData]
+            peoples: [...peopleData],
+            isLoading: false,
         };
+
+        case 'FETCH_PEOPLES':
+        return {
+            ...state,
+            isLoading: true
+        }
 
         case SET_FILMS:
         return {
             ...state,
-            films: [...filmsData]
+            films: [...filmsData],
+            isLoading: false,
         };
+
+        case 'FETCH_FILMS':
+        return {
+            ...state,
+            isLoading: true
+        }
 
         case SET_STARSHIPS:
         return {
             ...state,
-            starships: [...starshipsData]
+            starships: [...starshipsData],
+            isLoading: false,
         };
+
+        case 'FETCH_STARSHIPS':
+        return {
+            ...state,
+            isLoading: true
+        }
 
         case SET_VEHICLES:
         return {
             ...state,
-            vehicles: [...vehiclesData]
+            vehicles: [...vehiclesData],
+            isLoading: false,
         };
+
+        case 'FETCH_VEHICLES':
+        return {
+            ...state,
+            isLoading: true
+        }
 
         case SET_SPECIES:
         return {
             ...state,
-            species: [...speciesData]
+            species: [...speciesData],
+            isLoading: false,
         };
+
+        case 'FETCH_SPECIES':
+        return {
+            ...state,
+            isLoading: true
+        }
 
         case SET_PLANETS:
         return {
             ...state,
-            planets: [...planetsData]
+            planets: [...planetsData],
+            isLoading: false,
         };
+
+        case 'FETCH_PLANETS':
+        return {
+            ...state,
+            isLoading: true
+        }
 
         case CLOSE_PEOPLES:
         return {
